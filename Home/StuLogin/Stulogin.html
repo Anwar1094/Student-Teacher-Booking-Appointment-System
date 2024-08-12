@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <Title>Student-Teacher Booking System</Title>
+    <link rel="stylesheet" href="Stulogin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Ga+Maamli&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-div" id="main">
+        <div class="title">
+            <h1 class="Title"><span id="title">Student-Teacher Booking Appointment</span></h1>
+        </div>
+        <div class="stu-div" id="stu">
+            <button class="close" id="close">
+                <img src="crossbtn.png" alt="close" width="20px" height="20px">
+            </button>
+            <h1 class="stu">Student Login</h1>
+            <img src="login.png" width="100px" height="90px" style="margin-bottom: 1%;">
+            <div class="userDiv">
+                <input type="text" class="u_inp" id="u_id" required>
+                <h1 class="cls-user">UserName</h1>
+                <img src="correct.png" alt="" class="u_correct" id="u_correct">
+                <img src="incorrect.png" alt="" class="u_incorrect" id="u_incorrect">
+            </div>
+            <div class="passDiv">
+                <input type="password" class="p_inp" id="u_pass" required>
+                <h1 class="cls-pass">Password</h1>
+                <img src="correct.png" alt="" class="p_correct" id="p_correct">
+                <img src="incorrect.png" alt="" class="p_incorrect" id="p_incorrect">
+                <button class="hide">
+                    <img src="close-eye.png" alt="" class="hideImg" id="p_correct">
+                </button>
+                <button class="show">
+                    <img src="eye open.png" alt="" class="showImg" id="p_incorrect">
+                </button>
+            </div>
+            <button id="login">Login</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js ">
+    </script>
+    <script type="module" src="Stulogin.js"></script>
+</body>
+
+</html>

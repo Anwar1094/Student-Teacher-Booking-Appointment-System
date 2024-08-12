@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <Title>Student-Teacher Booking System</Title>
+    <link rel="stylesheet" href="Stuwin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Ga+Maamli&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-div" id="main">
+        <div class="title">
+            <h1 class="Title"><span id="title">Student-Teacher Booking Appointment</span></h1>
+        </div>
+        <div class="stuwin-div" id="stuwin">
+            <div class="TitleBar">
+                <div class="dropdown" id="dropdown">
+                    <button class="dropdown-btn" id="Home">Home <img src="Home.png" width="30px" style="vertical-align: middle;"></button>
+                    <button class="dropdown-btn" id="LogOut">LogOut <img src="logout.png" width="30px" style="vertical-align: middle;"></button>
+                </div>
+                <button id="menu" class="menu" type="button">
+                    <img src="menubtn.png" width="40px" height="30px">
+                </button>
+                <h1 class="h1-menu">STA E-Booking</h1>
+                <div class="user">
+                    <span class="userTitle"></span>
+                </div>
+                <img src="user.png" width="50px" height="50px">
+            </div>
+            <div class='stuwin-btn-div' id="booking">
+                <img src="Booking.png" width="100px">
+                <button class="btn" id="btn-booking">Book Slot</button>
+            </div>
+            <div class='stuwin-btn-div' id="mybooking">
+                <img src="mybooking.png" width="100px">
+                <button class="btn" id="btn-mybooking">My Booking</button>
+            </div>
+            <div class='stuwin-btn-div' id="profile">
+                <img src="Profile.png" width="100px">
+                <button class="btn" id="btn-profile">My Profile</button>
+            </div>
+            <div class='stuwin-btn-div' id="message">
+                <img src="msg.png" width="100px">
+                <button class="btn" id="btn-msg">My Messages</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js ">
+    </script>
+    <script type="module" src="Stuwin.js "></script>
+</body>
+
+</html>

@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Ga+Maamli&display=swap');
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Dancing Script';
+}
+
+div.main-div {
+    display: flex;
+    flex-direction: column;
+}
+
+div.title {
+    background-color: #f5f5f5;
+    margin-top: 1%;
+}
+
+h1.Title {
+    width: 870px;
+    position: relative;
+    margin: 0%;
+    margin: auto;
+    font-size: 60px;
+}
+
+span#title::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 98%;
+    left: 0%;
+    border-left: 2px solid black;
+    background-color: #f5f5f5;
+    animation: type 5s steps(35) infinite;
+}
+
+@keyframes type {
+    100% {
+        left: 100%;
+        margin: 0 -35px 0 35px;
+        width: 0%;
+    }
+}
+
+button {
+    font-size: 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 1%;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+.stuwin-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #0a0a0ad6, #384352);
+}
+
+.TitleBar {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2% 6% 84% 1.5% 0%;
+    align-items: center;
+    background-color: #edebea;
+}
+
+#menu {
+    background-color: transparent;
+    margin-top: 10px;
+    margin-left: 4%;
+}
+
+.dropdown {
+    position: relative;
+    top: 80px;
+    right: -5px;
+    width: 200px;
+    display: flex;
+    height: 100px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.997);
+    border-radius: 5px;
+    box-shadow: 5px 5px 25px black, inset -5px -5px 50px white;
+    visibility: hidden;
+}
+
+.dropdown-btn {
+    border-radius: 0%;
+    background-color: white;
+    width: 100%;
+}
+
+.dropdown-btn:hover {
+    background-color: gainsboro;
+}
+
+.btn {
+    width: 350px;
+    height: 80px;
+    align-self: center;
+    margin-left: 2%;
+    background-color: #1993d5;
+    color: #9febfe;
+    border: 5px solid #d3ecfa;
+    border-style: #9febfe ouset;
+    margin-left: 10%;
+}
+
+.stuwin-btn-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 1%;
+    visibility: visible;
+}
+
+div.user {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    font-size: 15px;
+    width: 70px;
+    height: 100px;
+    font-weight: bold;
+    align-items: end;
+    justify-content: center;
+}
+
+.userTitle {
+    position: absolute;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    white-space: nowrap;
+    padding: 5px 10px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: all 0.5 ease;
+    left: 50px;
+}
+
+.userTitle:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -15%;
+    transform: translateX(-50%) rotate(45deg);
+    border: 7px solid black;
+}
+
+.user:hover .userTitle {
+    top: 88px;
+    opacity: 1;
+    visibility: visible;
+}
+
+table {
+    font-size: 20px;
+    padding: 2%;
+    width: 500px;
+    margin: 1%;
+    background-color: rgba(255, 255, 255, 0.997);
+    border-radius: 10px;
+    box-shadow: 5px 5px 25px black, inset -5px -5px 50px white;
+}
+
+tr {
+    border: 1px solid black;
+    width: 100%;
+    justify-content: center;
+    text-align: justify;
+}
+
+.book-slot-btn-div {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.bookBtn1,
+.MsgBtn {
+    width: 45%;
+    background-color: #1993d5;
+    color: white;
+}
+
+.details-h1 {
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    background-color: rgba(255, 255, 255, 0.997);
+    border-radius: 10px;
+    box-shadow: 5px 5px 25px black, inset -5px -5px 50px white;
+}
+
+.book-slot {
+    width: 100%;
+}
+
+.book-slot-td {
+    width: 150px;
+    padding-left: 10px;
+}
+
+.book-slot,
+.book-slot-td,
+th {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+th {
+    padding: 1.5%;
+    text-align: center;
+}
+
+.bookBtn {
+    width: 80%;
+    background-color: #1993d5;
+    color: white;
+}
+
+#para {
+    display: flex;
+    padding: 5%;
+    width: 90%;
+    font-size: 18px;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#update-user {
+    width: 80%;
+    background-color: #1993d5;
+    color: white;
+    align-self: center;
+}
+
+.stu-details-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.inp-update-div {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    border-radius: 10px;
+}
+
+input {
+    width: 300px;
+    margin: 1%;
+    padding: 1%;
+    border: none;
+    font-size: 18px;
+    outline: none;
+    border-bottom: 1px solid black;
+}
+
+#update-inp-btn {
+    width: 50%;
+    background-color: #1993d5;
+    color: white;
+}
+
+.Msg-div {
+    display: flex;
+    flex-direction: row;
+    width: 22%;
+    height: 50px;
+    position: absolute;
+    top: 220px;
+    right: 10px;
+    background-color: white;
+    border-radius: 50px;
+    justify-content: center;
+}
+
+.inp-msg {
+    position: relative;
+    background-color: #1993d5;
+    border-radius: 50px;
+    width: 100%;
+    margin-left: 1.5%;
+    color: white;
+    font-size: 22px;
+    padding-right: 20%;
+}
+
+#inp-msg-btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 2.5px;
+    border-radius: 50%;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+#send {
+    width: 30px;
+}
+
+.para {
+    display: flex;
+    width: 450px;
+    flex-direction: column;
+    padding: 2%;
+    margin: 1%;
+    background-color: rgba(255, 255, 255, 0.997);
+    border-radius: 10px;
+    box-shadow: 5px 5px 25px black, inset -5px -5px 50px white;
+}
+
+.reply {
+    align-self: center;
+    margin-top: 2%;
+    font-size: 20px;
+    width: 400px;
+    background-color: #1993d5;
+    color: white;
+}
+
+.Msg-div {
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    height: 40px;
+    background-color: white;
+    border-radius: 50px;
+    justify-content: center;
+    padding-bottom: 1%;
+    right: 0;
+    /* top: 55px; */
+}
+
+.inp-msg {
+    position: relative;
+    background-color: #1993d5;
+    border-radius: 50px;
+    width: 100%;
+    margin-left: 1.5%;
+    color: white;
+    font-size: 22px;
+    height: 38px;
+    padding-right: 20%;
+    padding-left: 5%;
+}
+
+#inp-msg-btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 2.5px;
+    border-radius: 50%;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    bottom: 3px;
+}
+
+#send {
+    width: 30px;
+}
+
+.inp-reply {
+    padding-left: 1%;
+    padding-right: 1%;
+    border-radius: 6px;
+    width: 95%;
+    margin-left: 1.5%;
+    font-size: 18px;
+    top: 0px;
+    outline: none;
+    border: none;
+}
+
+.outer-div {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 15%;
+    top: 220px;
+    right: 10px;
+    background-color: white;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+textarea {
+    resize: none;
+}
+
+.Msg-rply-div {
+    display: flex;
+    flex-direction: column;
+    width: 79%;
+    height: 50px;
+    background-color: white;
+    border-radius: 50px;
+    justify-content: center;
+    padding-bottom: 1%;
+    right: 0;
+}
+
+#rply-msg-btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 2.5px;
+    border-radius: 50%;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    bottom: 4px;
+}

@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Ga+Maamli&display=swap');
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Dancing Script';
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.863), white);
+    background-repeat: no-repeat;
+}
+
+div.main-div {
+    display: flex;
+    flex-direction: column;
+}
+
+div.title {
+    margin-top: 1%;
+}
+
+h1.Title {
+    width: 870px;
+    position: relative;
+    margin: auto;
+    font-size: 60px;
+    margin-bottom: 1%;
+    background-color: #efefef;
+}
+
+span#title::after {
+    content: "";
+    position: absolute;
+    height: 101%;
+    width: 100%;
+    left: 0%;
+    border-left: 2px solid black;
+    background-color: #efefef;
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+    opacity: 98;
+    animation: type 5s steps(35) infinite;
+}
+
+@keyframes type {
+    100% {
+        left: 100%;
+        margin: 0 -35px 0 35px;
+        width: 0%;
+    }
+}
+
+button {
+    font-size: 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 1%;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+input {
+    width: 300px;
+    margin: 1%;
+    padding: 1%;
+    border: none;
+    font-size: 18px;
+    outline: none;
+    border-bottom: 1px solid black;
+}
+
+.TitleBar {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 6% 87% 0% 0%;
+    align-items: center;
+    background-color: #edebea;
+}
+
+#Home {
+    background-color: transparent;
+    margin: 4%;
+}
+
+.register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #0a0a0ad6, #384352);
+}
+
+.register-div {
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    align-items: center;
+    margin: 1%;
+    background-color: rgba(255, 255, 255, 0.997);
+    border-radius: 10px;
+    box-shadow: 5px 5px 25px black, inset -5px -5px 50px white;
+}
+
+.stu-inp-topdiv {
+    display: flex;
+    flex-direction: row;
+}
+
+.inp {
+    font-size: 20px;
+    position: relative;
+    left: 12%;
+    margin-bottom: 1%;
+    margin: 0%;
+    padding: 0%;
+    width: 400px;
+}
+
+.lbl {
+    width: 100px;
+    font-size: larger;
+    pointer-events: none;
+    position: relative;
+    right: 308px;
+    transition: all 0.9s ease;
+}
+
+.inp:focus~.lbl {
+    top: -25px;
+}
+
+.inp:valid~.lbl {
+    top: -25px;
+}
+
+.correct,
+.incorrect {
+    position: relative;
+    width: 20px;
+    visibility: hidden;
+}
+
+.correct {
+    right: 25px;
+}
+
+.incorrect {
+    right: 45px;
+}
+
+.stu-inp-bottomdiv {
+    display: flex;
+    flex-direction: row;
+}
+
+.error-h1 {
+    font-size: small;
+    font-weight: bolder;
+    pointer-events: none;
+    position: relative;
+    color: red;
+    left: 60px;
+    visibility: hidden;
+}
+
+.stu-inp-div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.btn {
+    width: 140px;
+    border: none;
+    color: whitesmoke;
+    background-color: #137dc9;
+    align-self: center;
+    height: 44px;
+    font-size: 30px;
+    border-radius: 50px;
+}
+
+table {
+    font-size: 20px;
+    padding: 2%;
+    width: 500px;
+    margin: 1%;
+    background-color: rgba(255, 255, 255, 0.997);
+    border-radius: 10px;
+    box-shadow: 5px 5px 25px black, inset -5px -5px 50px white;
+}
+
+tr {
+    border: 1px solid black;
+    width: 100%;
+    justify-content: center;
+    text-align: justify;
+}
+
+.Stu-Heading {
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    align-items: center;
+    margin: 1%;
+    background-color: rgba(255, 255, 255, 0.997);
+    border-radius: 10px;
+    box-shadow: 5px 5px 25px black, inset -5px -5px 50px white;
+}
+
+div.user {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    left: -23px;
+    font-size: 15px;
+    width: 100px;
+    height: 100px;
+    font-weight: bold;
+    align-items: end;
+    justify-content: center;
+}
+
+.userTitle {
+    position: absolute;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    white-space: nowrap;
+    padding: 5px 10px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: all 0.5 ease;
+    left: 50px;
+}
+
+.userTitle:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -15%;
+    transform: translateX(-50%) rotate(45deg);
+    border: 7px solid black;
+}
+
+.user:hover .userTitle {
+    top: 88px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.userImg {
+    pointer-events: none;
+    cursor: none;
+}

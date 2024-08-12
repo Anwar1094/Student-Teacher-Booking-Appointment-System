@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <Title>Student-Teacher Booking System</Title>
+    <link rel="stylesheet" href="Register.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Ga+Maamli&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-div" id="main">
+        <div class="title">
+            <h1 class="Title"><span id="title">Student-Teacher Booking Appointment</span></h1>
+        </div>
+        <div class="register">
+
+            <div class="TitleBar">
+                <button class="dropdown-btn" id="Home">
+                    <img src="Home.png" width="50px" style="vertical-align: middle;">
+                </button>
+                <h1 class="h1-menu">STA E-Booking</h1>
+                <div class="user">
+                    <span class="userTitle"></span>
+                </div>
+                <img src="user.png" width="50px" height="50px" style="margin: 4%;">
+            </div>
+            <div class="register-div" id="register-win">
+                <h1 class="Add-Tech-Lbl" style="margin-bottom: 3%;">
+                    Student Sign-Up
+                </h1>
+                <div class="stu-inp-div" id="stu-inp-div-Name">
+                    <div class="stu-inp-topdiv">
+                        <input class="inp" id="Name" type="text" required>
+                        <h1 class="lbl">Name</h1>
+                        <img src="correct.png" class="correct" id="Name-correct" width="0">
+                        <img src="incorrect.png" class="incorrect" id="Name-incorrect" width="0"></div>
+                    <div class="stu-inp-bottomdiv">
+                        <h1 id="error-Name" class="error-h1">H1</h1>
+                    </div>
+                </div>
+                <div class="stu-inp-div" id="stu-inp-div-Email">
+                    <div class="stu-inp-topdiv">
+                        <input class="inp" id="Email" type="text" required>
+                        <h1 class="lbl">Email Id</h1>
+                        <img src="correct.png" class="correct" id="Email-correct" width="0">
+                        <img src="incorrect.png" class="incorrect" id="Email-incorrect" width="0"></div>
+                    <div class="stu-inp-bottomdiv">
+                        <h1 id="error-Email" class="error-h1">H1</h1>
+                    </div>
+                </div>
+                <div class="stu-inp-div" id="stu-inp-div-Password">
+                    <div class="stu-inp-topdiv">
+                        <input class="inp" id="Password" type="password" required>
+                        <h1 class="lbl">Password</h1>
+                        <img src="correct.png" class="correct" id="Password-correct" width="0">
+                        <img src="incorrect.png" class="incorrect" id="Password-incorrect" width="0"></div>
+                    <div class="stu-inp-bottomdiv">
+                        <h1 id="error-Password" class="error-h1">H1</h1>
+                    </div>
+                </div>
+                <div class="stu-inp-div" id="stu-inp-div-Mobile">
+                    <div class="stu-inp-topdiv">
+                        <input class="inp" id="Mobile" type="text" required>
+                        <h1 class="lbl">Mobile No.</h1>
+                        <img src="correct.png" class="correct" id="Mobile-correct" width="0">
+                        <img src="incorrect.png" class="incorrect" id="Mobile-incorrect" width="0"></div>
+                    <div class="stu-inp-bottomdiv">
+                        <h1 id="error-Mobile" class="error-h1">H1</h1>
+                    </div>
+                </div>
+                <div class="stu-inp-div" id="stu-inp-div-Age">
+                    <div class="stu-inp-topdiv">
+                        <input class="inp" id="Age" type="text" required>
+                        <h1 class="lbl">Age</h1>
+                        <img src="correct.png" class="correct" id="Age-correct" width="0">
+                        <img src="incorrect.png" class="incorrect" id="Age-incorrect" width="0"></div>
+                    <div class="stu-inp-bottomdiv">
+                        <h1 id="error-Age" class="error-h1">H1</h1>
+                    </div>
+                </div>
+                <div class="stu-inp-div" id="stu-inp-div-Address">
+                    <div class="stu-inp-topdiv">
+                        <input class="inp" id="Address" type="text" required>
+                        <h1 class="lbl">Address</h1>
+                        <img src="correct.png" class="correct" id="Address-correct" width="0">
+                        <img src="incorrect.png" class="incorrect" id="Address-incorrect" width="0"></div>
+                    <div class="stu-inp-bottomdiv">
+                        <h1 id="error-Address" class="error-h1">H1</h1>
+                    </div>
+                </div>
+                <div class="stu-inp-div" id="stu-inp-div-Address">
+                    <button class="btn" id="Submit">Sign Up</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js ">
+    </script>
+    <script type="module" src="Register.js"></script>
+</body>
+
+</html>

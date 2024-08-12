@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Ga+Maamli&display=swap');
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Dancing Script';
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.863), white);
+    background-repeat: no-repeat;
+}
+
+div.main-div {
+    display: flex;
+    flex-direction: column;
+}
+
+div.title {
+    margin-top: 1%;
+}
+
+h1.Title {
+    width: 870px;
+    position: relative;
+    margin: auto;
+    font-size: 60px;
+    margin-bottom: 5%;
+    background-color: #efefef;
+}
+
+span#title::after {
+    content: "";
+    position: absolute;
+    height: 101%;
+    width: 100%;
+    left: 0%;
+    border-left: 2px solid black;
+    background-color: #efefef;
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+    opacity: 98;
+    animation: type 5s steps(35) infinite;
+}
+
+@keyframes type {
+    100% {
+        left: 100%;
+        margin: 0 -35px 0 35px;
+        width: 0%;
+    }
+}
+
+div.btn-div {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    font-size: 30px;
+    border: none;
+    width: 25%;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 1%;
+}
+
+button.main-btn {
+    background: -webkit-linear-gradient(0deg, transparent 50%, #c9fdfe 50%);
+    background-size: 800px 80px;
+    background-color: white;
+    align-self: center;
+    box-shadow: 0px 0px 20px rgba(21, 21, 22, 0.8);
+    transition: 0.5s;
+}
+
+.main-btn:hover {
+    background-position: 400px 0;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+button.menu-btn {
+    width: 5%;
+    margin-top: 1.5%;
+    background-color: transparent;
+}

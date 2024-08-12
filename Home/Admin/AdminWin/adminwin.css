@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Ga+Maamli&display=swap');
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Dancing Script';
+}
+
+div.main-div {
+    display: flex;
+    flex-direction: column;
+}
+
+div.title {
+    background-color: #f5f5f5;
+    margin-top: 1%;
+}
+
+h1.Title {
+    width: 870px;
+    position: relative;
+    margin: 0%;
+    margin: auto;
+    font-size: 60px;
+}
+
+span#title::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 98%;
+    left: 0%;
+    border-left: 2px solid black;
+    background-color: #f5f5f5;
+    animation: type 5s steps(35) infinite;
+}
+
+@keyframes type {
+    100% {
+        left: 100%;
+        margin: 0 -35px 0 35px;
+        width: 0%;
+    }
+}
+
+.adminwin-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #0a0a0ad6, #384352);
+}
+
+.TitleBar {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2% 6% 86% 0% 0%;
+    align-items: center;
+    background-color: #edebea;
+}
+
+.UpdateTech,
+.AddTech {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 2%;
+    visibility: visible;
+}
+
+.h1-menu {
+    align-self: center;
+}
+
+button {
+    font-size: 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 1%;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+.AddBtn {
+    width: 350px;
+    height: 100px;
+    align-self: center;
+    margin-left: 2%;
+    background-color: #1993d5;
+    color: #9febfe;
+    border: 5px solid #d3ecfa;
+    border-style: #9febfe ouset;
+    margin-left: 10%;
+}
+
+.UpdateBtn {
+    width: 350px;
+    height: 100px;
+    align-self: center;
+    margin-left: 2%;
+    background-color: #1993d5;
+    color: #9febfe;
+    border: 5px solid #d3ecfa;
+    margin-left: 10%;
+}
+
+#menu {
+    background-color: transparent;
+    margin-top: 10px;
+    margin-left: 4%;
+}
+
+input {
+    width: 300px;
+    margin: 1%;
+    padding: 1%;
+    border: none;
+    font-size: 18px;
+    outline: none;
+    border-bottom: 1px solid black;
+}
+
+.tech-details-div {
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    align-items: center;
+    margin: 1%;
+    background-color: rgba(255, 255, 255, 0.997);
+    border-radius: 10px;
+    box-shadow: 5px 5px 25px black, inset -5px -5px 50px white;
+}
+
+.tech-inp-div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.tech-inp-topdiv {
+    display: flex;
+    flex-direction: row;
+}
+
+.tech-inp-bottomdiv {
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+}
+
+.lbl {
+    width: 100px;
+    font-size: larger;
+    pointer-events: none;
+    position: relative;
+    right: 308px;
+    transition: all 0.9s ease;
+}
+
+.inp:focus~.lbl {
+    top: -25px;
+}
+
+.inp:valid~.lbl {
+    top: -25px;
+}
+
+.btn {
+    width: 140px;
+    border: none;
+    color: whitesmoke;
+    background-color: #137dc9;
+    align-self: center;
+    height: 44px;
+    font-size: 30px;
+    border-radius: 50px;
+}
+
+.btn:active {
+    transform: scale(0.9);
+}
+
+.inp {
+    font-size: 20px;
+    position: relative;
+    left: 12%;
+    margin-bottom: 1%;
+    margin: 0%;
+    padding: 0%;
+    width: 400px;
+}
+
+.correct,
+.incorrect {
+    position: relative;
+    width: 20px;
+    visibility: hidden;
+}
+
+.correct {
+    right: 25px;
+}
+
+.incorrect {
+    right: 45px;
+}
+
+.error-h1 {
+    width: 100%;
+    font-size: small;
+    font-weight: bolder;
+    pointer-events: none;
+    position: relative;
+    color: red;
+    left: 60px;
+    visibility: hidden;
+}
+
+#tech-inp-div-Designation {
+    margin-bottom: 2%;
+}
+
+.show {
+    position: relative;
+    top: -7px;
+    width: 25px;
+    height: 20px;
+    background-color: transparent;
+    right: 22%;
+    /* visibility: hidden; */
+}
+
+.hide {
+    position: relative;
+    top: -7px;
+    width: 25px;
+    height: 20px;
+    background-color: transparent;
+    right: 15.5%;
+    visibility: hidden;
+}
+
+.hideImg {
+    width: 25px;
+    height: 15px;
+}
+
+#Password-lbl {
+    right: 302px;
+    height: 25px;
+}
+
+#tech-inp-div-Password {
+    width: 110%;
+    margin-left: 7%;
+}
+
+#Password {
+    width: 150%;
+}
+
+#Password-correct {
+    right: -1%;
+}
+
+#Password-incorrect {
+    right: 2.5%;
+}
+
+table {
+    font-size: 20px;
+    padding: 2%;
+    width: 500px;
+    margin: 1%;
+    background-color: rgba(255, 255, 255, 0.997);
+    border-radius: 10px;
+    box-shadow: 5px 5px 25px black, inset -5px -5px 50px white;
+}
+
+tr {
+    border: 1px solid black;
+    width: 100%;
+    justify-content: center;
+    text-align: justify;
+}
+
+.dropdown {
+    position: relative;
+    top: 80px;
+    right: -5px;
+    width: 200px;
+    display: flex;
+    height: 100px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.997);
+    border-radius: 5px;
+    box-shadow: 5px 5px 25px black, inset -5px -5px 50px white;
+    visibility: hidden;
+}
+
+.dropdown-btn {
+    border-radius: 0%;
+    background-color: white;
+    width: 100%;
+}
+
+.dropdown-btn:hover {
+    background-color: gainsboro;
+}
+
+.Tech-Data-Div {
+    display: flex;
+    flex-direction: row;
+    width: 450px;
+}
+
+.update,
+.del {
+    width: 50%;
+    color: white;
+    background-color: #1993d5;
+    border: 3px solid #d3ecfa;
+    border-style: #9febfe ouset;
+}
+
+.No-Data-Div {
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    align-items: center;
+    margin: 1%;
+    background-color: rgba(255, 255, 255, 0.997);
+    border-radius: 10px;
+    box-shadow: 5px 5px 25px black, inset -5px -5px 50px white;
+}
+
+div.user {
+    display: flex;
+    position: relative;
+    left: -25px;
+    cursor: pointer;
+    font-size: 15px;
+    width: 200px;
+    height: 100px;
+    font-weight: bold;
+    align-items: end;
+}
+
+.userTitle {
+    position: absolute;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    white-space: nowrap;
+    padding: 5px 10px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: all 0.5 ease;
+    left: 50px;
+}
+
+.userTitle:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -15%;
+    transform: translateX(-50%) rotate(45deg);
+    border: 7px solid black;
+}
+
+.user:hover .userTitle {
+    top: 88px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.userImg {
+    pointer-events: none;
+    cursor: none;
+}
